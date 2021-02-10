@@ -1,0 +1,209 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+  background: blue;
+  color: white;
+  padding: 5px 0;
+  border-radius: 10px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header__nav {
+  padding-left: 10px;
+}
+
+.header__nav ul {
+  display: flex;
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.header__nav ul li {
+  margin-right: 10px;
+}
+
+.header__nav ul li:last-of-type {
+  margin-right: 0;
+}
+
+.header__nav a {
+  display: inline-block;
+  text-decoration: none;
+  background: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.header__nav a:hover {
+  background: #1f75fe;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1400px;
+  padding: 0 10px;
+}
+
+.container img {
+  max-width: 75%;
+}
+
+@media (max-width: 425px) {
+  .container img {
+    max-width: 100%;
+  }
+}
+
+.article blockquote {
+  position: relative;
+  padding-top: 1em;
+  padding-left: 2em;
+  border-left: 1px solid blue;
+  margin-left: 0;
+}
+
+.article blockquote::before {
+  content: 'цитата';
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.article__title a {
+  text-decoration: none;
+  color: blue;
+}
+
+.article__more {
+  display: inline-block;
+  text-decoration: none;
+  background: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.article__more:hover {
+  background: #1f75fe;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.mainpage img {
+  max-width: 250px;
+  border-radius: 50%;
+}
+
+.mainpage a {
+  text-decoration: none;
+}
+
+.mainpage a:hover {
+  text-decoration: underline;
+}
+
+.mainpage__avatar-place {
+  display: block;
+  position: relative;
+}
+
+.mainpage__avatar-blue {
+  width: 200px;
+  height: 30px;
+  background: blue;
+  position: absolute;
+  top: 43%;
+  left: 25px;
+}
+
+.footer {
+  padding: 1em 0;
+}
+
+/* Вставляем видео картинкой */
+/* Спасибо @pepelspey https://github.com/pepelsbey/playground */
+
+.video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  background-color: #000000;
+}
+
+.video__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video__media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  display: none;
+  padding: 0;
+  width: 68px;
+  height: 48px;
+  border: none;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.video__button-shape {
+  fill: #212121;
+  fill-opacity: 0.8;
+}
+
+.video__button-icon {
+  fill: #ffffff;
+}
+
+.video__button:focus {
+  outline: none;
+}
+
+.video:hover .video__button-shape,
+.video__button:focus .video__button-shape {
+  fill: #ff0000;
+  fill-opacity: 1;
+}
+
+/* Enabled */
+
+.video--enabled {
+  cursor: pointer;
+}
+
+.video--enabled .video__button {
+  display: block;
+}
+
+/* Конец вставки видео */
+
+/* Правка Prism */
+.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string {
+  background: #f5f2f0;
+}

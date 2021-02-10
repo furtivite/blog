@@ -1,0 +1,10 @@
+---
+layout: layouts/base-layout.njk
+---
+<article class="article">
+  <h1>{{ title }}</h1>
+  {% if page.url == "/posts/" %}
+    <time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
+  {% endif %}
+  {{ content | safe }}
+</article>

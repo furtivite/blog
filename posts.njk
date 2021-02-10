@@ -1,0 +1,21 @@
+---
+layout: layouts/base-layout.njk
+pagination:
+  data: collections.post
+  size: 100
+  reverse: true
+  alias: posts
+---
+<h1>
+  Все записи
+</h1>
+{% for post in posts %}
+  <article class="article">
+    <h1 class="article__title">
+      <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+    </h1>
+    <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
+    {% excerpt post %}
+    <a href="{{ post.url | url }}" aria-label="Читать дальше {{ post.data.title }}" class="article__more">Читать дальше</a>
+  </article>
+{% endfor %}

@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/css/prism.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Егор Левченко. frontend-developer</title> 
+</head> 
+<body> 
+  <header class="header">
+    <nav class="header__nav">
+      <ul>
+        <li>
+          {% if page.url == "/" %}Егор Левченко{% endif %}
+          {% if page.url !== "/" %}<a href="/">Егор Левченко</a>{% endif %}
+        </li>
+        <li>
+          {% if page.url !== "/posts/" %}<a href="/posts">Все записи</a>{% endif %}
+        </li>
+      </ul>
+    </nav>
+  </header> 
+  <main>
+    <div class="container">
+      {{ content | safe }}
+    </div>
+  </main> 
+  <footer class="footer">
+    <div class="container">
+      &copy;&nbsp;2021
+    </div>
+  </footer>
+  <script src="/scripts/prism.js"></script>
+  <script src="/scripts/post.js"></script>
+</body> 
+</html>
