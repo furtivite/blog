@@ -6,7 +6,8 @@ pagination:
   reverse: true
   alias: posts
 ---
-![Это я](/imgs/me.jpeg)
+
+{% image "./imgs/me.jpeg", "Это я" %}
 
 Привет, меня зовут Егор!
 

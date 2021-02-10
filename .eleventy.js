@@ -34,7 +34,7 @@ const Image = require("@11ty/eleventy-img");
 
 async function imageShortcode(src, alt, sizes) {
   let metadata = await Image(src, {
-    widths: [300, 600],
+    widths: [250, 600],
     formats: ["avif", "jpeg"]
   });
 
@@ -68,6 +68,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode('excerpt', article => extractExcerpt(article));
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("imgs");
+  eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("scripts");
 };
 
