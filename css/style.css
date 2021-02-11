@@ -148,7 +148,7 @@ body {
   height: 100%;
 }
 
-.video__media {
+.video .video__media {
   position: absolute;
   top: 0;
   left: 0;
