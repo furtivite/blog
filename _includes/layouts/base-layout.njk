@@ -15,9 +15,11 @@
           {% if page.url == "/" %}Егор Левченко{% endif %}
           {% if page.url !== "/" %}<a href="/">Егор Левченко</a>{% endif %}
         </li>
+        {% if page.url !== "/posts/" %}
         <li>
-          {% if page.url !== "/posts/" %}<a href="/posts">Все записи</a>{% endif %}
+          <a href="/posts">Все записи</a>
         </li>
+        {% endif %}
       </ul>
     </nav>
   </header> 
