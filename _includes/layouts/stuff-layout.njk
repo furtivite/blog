@@ -1,0 +1,15 @@
+---
+layout: layouts/base-layout.njk
+---
+<article class="article article_stuff">
+  <div class="article__header">
+    <img src="{{ cover.src }}" class="article__cover" alt="{{ item.data.title }}"/>
+    <div class="article__precontent">
+      <h1>{{ title }}</h1>
+      {% for item in precontent %}
+        <p>{{ item }}</p>
+      {% endfor %}
+    </div>
+  </div>
+  {{ content | safe }}
+</article>

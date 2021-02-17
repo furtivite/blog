@@ -1,0 +1,30 @@
+---
+layout: layouts/base-layout.njk
+pagination:
+  data: collections.stuff
+  size: 200
+  reverse: true
+  alias: stuff
+---
+<h1>Всякие штуки</h1>
+<p>
+  У каждого из нас есть штуки, которые нас вдохновляют, радуют, воодушевляют (далее поставьте любое другое слово). Вот мой набор, надеюсь, вам понравится и будет интересно.
+</p>
+<p>
+  Раздел будет периодически дополняться.
+</p>
+<section class="stuff">
+
+  <nav class="stuff__nav">
+    <ul>
+    {% for item in stuff %}
+    <li>
+      <a href="{{ item.url | url }}" aria-label="Вдохновиться с {{ item.data.title }}" class="article__more">
+        <img src="{{ item.data.cover.src }}" class="article__cover" title="Вдохновиться с {{ item.data.title }}" alt="{{ item.data.title }}"/>
+      </a>
+    </li>    
+    {% endfor %}
+    </ul>
+  </nav>
+
+</section>

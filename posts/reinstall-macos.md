@@ -73,11 +73,11 @@ curl -L -o Contents/SharedSupport/SharedSupport.dmg http://swcdn.apple.com/c
 
 И начинается скачивание...
 
-![](/imgs/reinstall-macos/image_1.jpg)
+![](/imgs/posts/reinstall-macos/image_1.jpg)
 
 Затем оно прерывается с ошибкой...
 
-![](/imgs/reinstall-macos/image_2.jpg)
+![](/imgs/posts/reinstall-macos/image_2.jpg)
 
 Вот и всё! У вас нет прав на запись данных на диск. Смиритесь и ~~покупайте новый мак или~~ идите звоните в техническую поддержку Apple.
 
@@ -91,7 +91,7 @@ curl -L -o Contents/SharedSupport/SharedSupport.dmg http://swcdn.apple.com/c
 
 Затем снова ввести пароль от iCloud и начать установку.
 
-![](/imgs/reinstall-macos/image_3.jpg)
+![](/imgs/posts/reinstall-macos/image_3.jpg)
 
 Уже затем вы можете выбрать нужный вам язык, если (к примеру) вы пользуетесь русскоязычным интерфейсом, установить раскладки и так далее.
 
