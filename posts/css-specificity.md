@@ -4,6 +4,7 @@ description: Рассказываю про то, как перестать ис�
 date: 2020-01-01
 layout: layouts/post-layout.njk
 tags: ['post']
+recommended: yes
 ---
 <!-- Excerpt Start -->
 Ваш HTML-код состоит из множества «элементов»:

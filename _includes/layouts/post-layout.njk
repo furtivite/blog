@@ -2,9 +2,9 @@
 layout: layouts/base-layout.njk
 ---
 <article class="article">
-  <h1>{{ title }}</h1>
-  {% if page.url == "/posts/" %}
-    <time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
-  {% endif %}
+  <h1>{{ title }}&nbsp;{% if recommended %}★{% endif %}</h1>
   {{ content | safe }}
+  {% if page.url !== "/posts/" %}
+    <time datetime="{{ date | dateIso }}" class="article__time">{{ date | dateReadable }}</time>
+  {% endif %}
 </article>
