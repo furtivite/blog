@@ -9,13 +9,16 @@ pagination:
 <h1>
   Все записи
 </h1>
+<section class="posts">
 {% for post in posts %}
-  <article class="article">
-    <h1 class="article__title">
-      <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-    </h1>
-    <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
-    {% excerpt post %}
+  <article class="article {% if post.data.recommended %}article_recommended{% endif %}">
+    <div class="article__precontent">
+      <h1 class="article__title">
+        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+      </h1>
+      {% excerpt post %}
+    </div>
     <a href="{{ post.url | url }}" aria-label="Читать дальше {{ post.data.title }}" class="article__more">Читать дальше</a>
   </article>
 {% endfor %}
+</section>
