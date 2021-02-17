@@ -15,4 +15,4 @@ pagination:
 
 Пользуюсь БЭМ, там, где это ОК, и не пользуюсь им, там, где ~~мне лень~~ он излишен. Люблю [11ty.dev](https://www.11ty.dev) и Ubuntu. Считаю, что за опенсорсом будущее. Иногда тырю чужой код, если лицензия позволяет. Всегда переписываю его под себя и оставляю ссылки на авторов.
 
-Можно [почитать блог](/posts/), подписаться [твиттер](https://twitter.com/furtivite) или [инстаграм](https://www.instagram.com/furtivite/) или на [гитхабе](https://github.com/furtivite).
+Можно [почитать блог](/posts/), [порассматривать всякие штуки](/stuff/), подписаться [твиттер](https://twitter.com/furtivite) или [инстаграм](https://www.instagram.com/furtivite/) или на [гитхабе](https://github.com/furtivite).
