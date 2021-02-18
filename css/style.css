@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -74,24 +81,43 @@ body {
   }
 }
 
-.mainpage img {
-  max-width: 250px;
-  width: auto;
-  height: auto;
-  border-radius: 50%;
+.mainpage {
+  font-size: 1.5em;
 }
 
 .mainpage a {
   text-decoration: none;
 }
 
+.mainpage s {
+  color: #dcdcdc;
+}
+
 .mainpage a:hover {
   text-decoration: underline;
 }
 
+img.mainpage__image {
+  max-width: 250px;
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+}
+
 .mainpage__avatar-place {
-  display: block;
   position: relative;
+  float:left;
+  shape-outside: circle(50%);
+  max-width:250px;
+  max-height:250px;
+  padding-right: 1em;
+  padding-bottom: 1em;
+}
+
+@media (max-width: 600px) {
+  .mainpage__avatar-place {
+    float: none;
+  }
 }
 
 .mainpage__avatar-blue {
