@@ -188,6 +188,10 @@ img.mainpage__image {
   right: 0;
 }
 
+.article summary {
+  cursor: pointer;
+}
+
 .article__precontent {
   margin-bottom: 1em;
 }
