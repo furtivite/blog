@@ -1,0 +1,18 @@
+---
+layout: layouts/base-layout.njk
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag }}/
+---
+<h1>Отмечено тегом «{{ tag }}»</h1>
+
+<section class="tag">
+  <ul>
+  {% set taglist = collections[ tag ] %}
+  {% for post in taglist | reverse %}
+    <li><a href="{{ post.url | url }}" class="tag__link {% if post.data.recommended %}tag__link_recommended{% endif %}"">{{ post.data.title }}</a></li>
+  {% endfor %}
+  </ul>
+</section>

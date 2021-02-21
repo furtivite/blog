@@ -3,7 +3,9 @@ title: Как выделить код в ЭГЕЕ
 description: Рассказываю про выделение кода в ЭГЕЕ
 date: 2020-01-01
 layout: layouts/post-layout.njk
-tags: ['post']
+tags: 
+  - 'post'
+  - 'home'
 ---
 <!-- Excerpt Start -->
 [В google docks](https://docs.google.com/document/d/1uLYj2bE2KltgDV8EoeYVbL0Zn1EWuDcFBuoqWPuRack/edit), которую Илья использует как официальную документацию к движку предлагается использовать следующий вариант:

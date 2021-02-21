@@ -6,9 +6,17 @@ pagination:
   reverse: true
   alias: posts
 ---
-<h1>
-  Все записи
-</h1>
+<section class="title">
+  <h1>
+    Все записи
+  </h1>
+  <nav class="title__nav">
+    <ul class="title__list">
+      <li><a href="/tags/work/" class="title__link">Про работу</a></li>
+      <li><a href="/tags/home/" class="title__link">Не про работу</a></li>
+    </ul>
+  </nav>
+</section>
 <section class="posts">
 {% for post in posts %}
   <article class="article {% if post.data.recommended %}article_recommended{% endif %}">

@@ -3,7 +3,9 @@ title: 6 причин, почему вам не стоит идти в код-р
 description: Рассказываю про то, почему код-ревьюер - это работа не для каждого
 date: 2020-01-01
 layout: layouts/post-layout.njk
-tags: ['post']
+tags: 
+  - 'post'
+  - 'work'
 recommended: yes
 ---
 <!-- Excerpt Start -->

@@ -3,7 +3,9 @@ title: Бета-тестеры
 description: Сокрушаюсь от того, что деньги просят за непроверенные решения
 date: 2021-01-08
 layout: layouts/post-layout.njk
-tags: ['post']
+tags: 
+  - 'post'
+  - 'home'
 ---
 <!-- Excerpt Start -->
 Я очень часто пользуюсь бета-продуктами.

@@ -3,7 +3,9 @@ title: Работа из дома. 5 правил, чтобы не сойти с
 description: Рассказываю о том, как разделить отдых и работу, и как огранизовать последнюю
 date: 2020-11-22
 layout: layouts/post-layout.njk
-tags: ['post']
+tags: 
+  - 'post'
+  - 'work'
 recommended: yes
 ---
 <!-- Excerpt Start -->

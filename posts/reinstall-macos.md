@@ -3,7 +3,9 @@ title: Переустановка macOS Big Sur (на MacBook с M1)
 description: Рассказываю, что не надо делать с новым макбуком, чтобы его не сломать
 date: 2021-01-26
 layout: layouts/post-layout.njk
-tags: ['post']
+tags: 
+  - 'post'
+  - 'home'
 ---
 <!-- Excerpt Start -->
 Когда что-то идёт критически не так, как вы хотели, вы идёте переустанавливать операционную систему.
