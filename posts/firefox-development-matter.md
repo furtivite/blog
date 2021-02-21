@@ -3,7 +3,9 @@ title: Firefox Development Matter
 description: Рассказываю про то, что альтернативные браузеры очень важны
 date: 2020-01-01
 layout: layouts/post-layout.njk
-tags: ['post']
+tags: 
+  - 'post'
+  - 'work'
 ---
 <!-- Excerpt Start -->
 Если вы frontend-разработчик, однажды вы столкнётесь с тем, что некоторые свойства будут работать не так, как вы привыкли в Google Chrome. Чтобы это исправить, вам потребуется использовать префиксы.

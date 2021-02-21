@@ -3,7 +3,9 @@ title: Специфичность в CSS
 description: Рассказываю про то, как перестать использовать !important в вёрстке
 date: 2020-01-01
 layout: layouts/post-layout.njk
-tags: ['post']
+tags: 
+  - 'post'
+  - 'work'
 recommended: yes
 ---
 <!-- Excerpt Start -->

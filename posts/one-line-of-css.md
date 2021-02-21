@@ -3,7 +3,9 @@ title: Одностроковый CSS от Google
 description: Рассказываю про то, что Grid - это не всегда лучший выбор
 date: 2020-01-01
 layout: layouts/post-layout.njk
-tags: ['post']
+tags: 
+  - 'post'
+  - 'work'
 ---
 <!-- Excerpt Start -->
 Сегодня я наткнулся на июньское видео от разработчиков Google Chrome, где Уна Кравец (Una Kravets, [@una](https://twitter.com/una)) рассказывает про современный CSS, который позволит вам создать макет, который поместится в одну строку.

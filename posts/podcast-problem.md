@@ -3,7 +3,9 @@ title: Проблема подкастов
 description: Сокрушаюсь по тому, что подкасты недооценены
 date: 2020-01-01
 layout: layouts/post-layout.njk
-tags: ['post']
+tags: 
+  - 'post'
+  - 'home'
 ---
 <!-- Excerpt Start -->
 Я слушаю подкасты с 2009 года.
