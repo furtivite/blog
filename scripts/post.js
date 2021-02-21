@@ -1,3 +1,10 @@
+const body = document.querySelector('body');
+const article = document.querySelector('.article');
+
+if (body.contains(article)) {
+  console.log('hey')
+}
+
 /* Вставляем видео картинкой */
 /* Спасибо @pepelspey https://github.com/pepelsbey/playground */
 function findVideos() {
