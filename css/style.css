@@ -52,7 +52,7 @@ body {
   text-decoration: none;
   background: blue;
   color: white;
-  padding: 10px;
+  padding: 1em;
   border-radius: 10px;
 }
 
@@ -292,6 +292,37 @@ img.mainpage__image {
 
 .stuff__nav ul li:last-of-type {
   margin-right: 0;
+}
+
+.tag ol {
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.tag li {
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.tag .tag__link {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid rgba(0, 0, 0, 0.1);;
+}
+
+.tag .tag__link:hover,
+.tag .tag__link:focus {
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.tag .tag__link.tag__link_recommended::after {
+  content: " ★";
 }
 
 .footer {

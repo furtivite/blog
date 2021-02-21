@@ -12,7 +12,7 @@ permalink: /tags/{{ tag }}/
   <ol>
   {% set taglist = collections[ tag ] %}
   {% for post in taglist | reverse %}
-    <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
+    <li><a href="{{ post.url | url }}" class="tag__link {% if post.data.recommended %}tag__link_recommended{% endif %}"">{{ post.data.title }}</a></li>
   {% endfor %}
   </ol>
 </section>
