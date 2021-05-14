@@ -19,13 +19,44 @@
 * Browsers: last 4 version
 */
 
+:root {
+  --black: #212121;
+  --blue: #039BE5;
+  --hell-blue: #81D4FA;
+  --red: #ff0000;
+  --medium-gray: #BDBDBD;
+  --hell-gray: #EEEEEE;
+  --white: #ffffff;
+}
+
+:root[theme='dark'] {
+  --black: #f5f2f0;
+  --blue: #039BE5;
+  --hell-blue: #81D4FA;
+  --red: #ff0000;
+  --medium-gray: #BDBDBD;
+  --hell-gray: #EEEEEE;
+  --white: #212121;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: var(--white);
+  color: var(--black);
+  line-height: 1.25em;
+}
+
+a {
+  color: var(--blue);
+}
+
+a:hover {
+  color: var(--hell-blue);
 }
 
 .header {
   width: calc(100% + 16px);
-  color: black;
+  color: var(--black);
   padding: 5px 0;
   max-width: 1440px;
   margin-left: -8px;
@@ -74,14 +105,14 @@ body {
 .header__nav a {
   display: inline-block;
   text-decoration: none;
-  background: blue;
+  background: var(--blue);
   color: white;
   padding: 1em;
   border-radius: 10px;
 }
 
 .header__nav a:hover {
-  background: #1f75fe;
+  background: var(--hell-blue);
   -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
 }
@@ -114,7 +145,7 @@ body {
 }
 
 .mainpage s {
-  color: #dcdcdc;
+  color: var(--medium-gray);
 }
 
 .mainpage a:hover {
@@ -147,7 +178,7 @@ img.mainpage__image {
 .mainpage__avatar-blue {
   width: 200px;
   height: 30px;
-  background: blue;
+  background: var(--blue);
   position: absolute;
   top: 40%;
   left: 25px;
@@ -188,14 +219,14 @@ img.mainpage__image {
 .title__link {
   display: inline-block;
   text-decoration: none;
-  background: blue;
+  background: var(--blue);
   color: white;
   padding: 1em;
   border-radius: 10px;
 }
 
 .title__link:hover {
-  background: #1f75fe;
+  background: var(--hell-blue);
   -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
 }
@@ -248,7 +279,7 @@ img.mainpage__image {
   position: relative;
   padding-top: 1em;
   padding-left: 2em;
-  border-left: 1px solid blue;
+  border-left: 1px solid var(--blue);
   margin-left: 0;
 }
 
@@ -269,30 +300,31 @@ img.mainpage__image {
 
 .article__title a {
   text-decoration: none;
-  color: blue;
+  color: var(--blue);
 }
 
 .article__title a:hover {
-  color: #1f75fe;
+  color: var(--hell-blue);
 }
 
 .article__more {
   display: inline-block;
   text-decoration: none;
-  background: blue;
+  background: var(--blue);
   color: white;
   padding: 10px;
   border-radius: 10px;
 }
 
 .article__more:hover {
-  background: #1f75fe;
+  background: var(--hell-blue);
+  color: white;
   -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
 .article__time {
-  color: #dcdcdc;
+  color: var(--medium-gray);
 }
 
 .article_stuff {
@@ -387,7 +419,7 @@ img.mainpage__image {
   padding: 1em;
   text-decoration: none;
   color: inherit;
-  border: 1px solid rgba(0, 0, 0, 0.1);;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .tag .tag__link:hover,
@@ -402,7 +434,7 @@ img.mainpage__image {
 
 .footer {
   padding: 1em 0;
-  color: #dcdcdc;
+  color: var(--medium-gray);
 }
 
 /* Вставляем видео картинкой */
@@ -413,7 +445,7 @@ img.mainpage__image {
   width: 100%;
   height: 0;
   padding-bottom: 56.25%;
-  background-color: #000000;
+  background-color: var(--black);
 }
 
 .video__link {
@@ -466,7 +498,7 @@ img.mainpage__image {
 
 .video:hover .video__button-shape,
 .video__button:focus .video__button-shape {
-  fill: #ff0000;
+  fill: var(--red);
   fill-opacity: 1;
 }
 
@@ -484,5 +516,5 @@ img.mainpage__image {
 
 /* Правка Prism */
 .token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string {
-  background: #f5f2f0;
+  background: var(--hell-gray);
 }
