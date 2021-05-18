@@ -1,42 +1,25 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
-:root {
-  --black: #212121;
-  --blue: #039BE5;
-  --hell-blue: #81D4FA;
-  --red: #ff0000;
-  --medium-gray: #BDBDBD;
-  --hell-gray: #EEEEEE;
-  --white: #ffffff;
+@media (prefers-color-scheme: light) {
+  :root {
+    --black: #212121;
+    --blue: #039BE5;
+    --hell-blue: #81D4FA;
+    --red: #ff0000;
+    --medium-gray: #BDBDBD;
+    --hell-gray: #EEEEEE;
+    --white: #ffffff;
+  }
 }
 
-:root[theme='dark'] {
-  --black: #f5f2f0;
-  --blue: #039BE5;
-  --hell-blue: #81D4FA;
-  --red: #ff0000;
-  --medium-gray: #BDBDBD;
-  --hell-gray: #EEEEEE;
-  --white: #212121;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --black: #f5f2f0;
+    --blue: #039BE5;
+    --hell-blue: #81D4FA;
+    --red: #ff0000;
+    --medium-gray: #BDBDBD;
+    --hell-gray: #EEEEEE;
+    --white: #212121;
+  }
 }
 
 body {
